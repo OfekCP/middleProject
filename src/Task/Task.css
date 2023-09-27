@@ -1,0 +1,419 @@
+/* Update task-container to be responsive */
+.task-container {
+    border: 1px solid #ccc;
+    padding: 5vw; /* Use vw for padding */
+    margin: 2vh; /* Use vh for margin */
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    width: 30vw;
+    height: 25vh;
+  }
+  
+  /* Update task-details to be responsive */
+  .task-details {
+    position: relative;
+    margin-top: 2vh;
+    padding: 2vw; /* Use vw for padding */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Update table-container to be responsive */
+  .table-container {
+    margin-top: 2vh;
+  }
+  
+  /* Update table to be responsive */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  /* Update table th, table td to be responsive */
+  .table th,
+  .table td {
+    padding: 1vh 2vw; /* Use vh and vw for padding */
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 1vw;
+  }
+  .table tr {
+    height: 5vh; /* Adjust the height as needed */
+  }
+  
+  /* Update table tr:nth-child(even) to be responsive */
+  .table tr:nth-child(even) {
+    background-color: #f2f2f2;
+ 
+  }
+  
+  /* Update table tr:hover to be responsive */
+  .table tr:hover {
+    background-color: #ddd;
+  }
+  
+  /* Update stopwatch-container to be responsive */
+  .stopwatch-container {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 2vh;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2vh;
+    width: 15vw;
+    height: 10vh; /* Adjust the height as needed */
+  }
+  
+  /* Update stopwatch-container p to be responsive */
+  .stopwatch-container p {
+    font-size: 1.3vw; /* Use vw for font size */
+    margin: 1vh 0; /* Use vh for margin */
+    position: relative;
+    bottom: 2.3vh;
+  }
+  
+  /* Update stopwatch-container button to be responsive */
+  .stopwatch-container button {
+    background-color: #50b7c9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    margin: 1vh;
+    font-size: 0.8vw; /* Use vw for font size */
+    height: 2vh;
+    width: 3vw;
+    position: relative;
+    bottom: 4vh;
+
+  }
+  .stopwatch-container button:nth-child(2) {
+    margin: 1vh 2vw; /* Use vh and vw for margin */
+  }
+  
+  /* Update .stopwatch-container button:hover to be responsive */
+  .stopwatch-container button:hover {
+    background-color: #6bd7eb;
+  }
+  .responsive-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50vw;
+    margin: 0 auto;
+    padding: 5vh;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    bottom: 3vh;
+    gap: 3vw;
+    transition: transform 0.2s ease-in-out;
+  }
+  .responsive-form:hover {
+    transform: translateY(-5px); /* Move the form up slightly on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increase box shadow on hover */
+    background-color: #e5e5e5; /* Change background color on hover */
+}
+
+/* Add hover effect to the submit button */
+.responsive-form button.form-button:hover {
+    background-color: #6bd7eb;
+    color: #fff;
+}
+  
+  .form-input,
+  .form-textarea,
+  .form-button {
+    width: 100%;
+    padding: 1vh;
+    margin: 1vh 0;
+    border: none;
+    border-radius: 5px;
+    font-size:1vw;
+  }
+  
+  .form-input,
+  .form-textarea {
+    background-color: #f2f2f2;
+  }
+  
+  .form-button {
+    background-color: #50b7c9;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    position: relative;
+    top: 5vh;
+    width: 15vw;
+  }
+  
+  .form-button:hover {
+    background-color: #6bd7eb;
+  }
+  
+  /* Additional styling for textarea */
+  .form-textarea {
+    resize: none;
+    height: 10vh; /* Set the initial height to 10vh and adjust as needed */
+  }
+    /* Hide the default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 5vh;
+    width: 3vw;
+    background-color: #ccc;
+    border-radius: 50%;
+    transition: .4s;
+  }
+  
+  .checkmark:hover {
+    box-shadow: inset 17px 17px 16px #b3b3b3,
+              inset -17px -17px 16px #ffffff;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    box-shadow: none;
+    background-color: limegreen;
+    transform: rotateX(360deg);
+  }
+  
+  .container input:checked ~ .checkmark:hover {
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 0.96em;
+    top: 0.7em;
+    width: 0.25em;
+    height: 0.5em;
+    border: solid white;
+    border-width: 0 0.15em 0.15em 0;
+    box-shadow: 0.1em 0.1em 0em 0 rgba(0,0,0,0.3);
+    transform: rotate(45deg);
+  }
+  .slider {
+    background-color: #ffffff2b;
+    border-radius: 100px;
+    padding: 1px;
+    margin: 10px;
+    cursor: pointer;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    align-items: center;
+    position: relative;
+    display: block;
+    width: 51px;
+    height: 29px;
+    box-shadow: rgba(0, 0, 0, 0.62) 0px 0px 5px inset, rgba(0, 0, 0, 0.21) 0px 0px 0px 24px inset,
+          yellow 0px 0px 0px 0px inset, rgba(224, 224, 224, 0.45) 0px 1px 0px 0px;
+  }
+  
+  .slider::after {
+    content: "";
+    display: flex;
+    top: 2.3px;
+    left: 2px;
+    width: 26px;
+    height: 26px;
+    background-color: #e3e3e3;
+    border-radius: 200px;
+    position: absolute;
+    box-shadow: transparent 0px 0px 0px 2px, rgba(0, 0, 0, 0.3) 0px 6px 6px;
+    transition: left 300ms cubic-bezier(0.4, 0, 0.2, 1) 0s, background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    will-change: left, background-color;
+  }
+  
+  .switch input[type="checkbox"]:checked + .slider {
+    box-shadow: rgba(0, 0, 0, 0.62) 0px 0px 5px inset, yellow 0px 0px 0px 2px inset, yellow 0px 0px 0px 24px inset,
+          rgba(224, 224, 224, 0.45) 0px 1px 0px 0px;
+  }
+  
+  .switch input[type="checkbox"]:checked + .slider::after {
+    left: 1.6vw;
+  }
+  
+  .switch input[type="checkbox"] {
+    display: none;
+  }
+
+.table th {
+    width: 20%; /* Adjust the width as needed */
+    white-space: nowrap; /* Prevent text from wrapping in th */
+    overflow: hidden; /* Hide overflowing content */
+    text-overflow: ellipsis; /* Show ellipsis for overflowing text */
+  }
+  
+  /* Update table td to have a fixed width */
+  .table td {
+    width: 20%; /* Adjust the width as needed */
+    white-space: nowrap; /* Prevent text from wrapping in td */
+    overflow: hidden; /* Hide overflowing content */
+    text-overflow: ellipsis; /* Show ellipsis for overflowing text */
+  }
+
+  .table-row-draggable {
+    cursor: grab;
+  }
+  /* Add a transition for smooth position changes */
+
+  
+  
+  /* Apply styles when a row is being dragged */
+  .table-row-dragging {
+    background-color: #fff; /* Set a different background color when dragging */
+    border: 1px dashed #007bff; /* Add a dashed border when dragging */
+  }
+/* CSS for the artistic delete button */
+/* CSS for the artistic delete button */
+.artistic-delete-button {
+    background-color: transparent; /* Transparent background */
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out; /* Smooth color transition on hover */
+  }
+  
+  /* CSS for the "Delete" icon */
+  .delete-icon {
+    font-size: 4vh; /* Adjust font size with vh unit */
+    color: rgb(255, 0, 0) ; /* Initial color (black) */
+  }
+  .all{
+    position: relative;
+    top: 15vh;
+  }
+#newTaskHeader{
+    position:relative;
+    bottom: 10vh;
+    left: 18vw;
+    
+}
+  
+  .form-group{
+    position: relative;
+    top: 5vh;
+  }
+#taskManagmentHeader{
+display: flex;
+justify-content: center;
+position: relative;
+bottom: 4vh;
+font-size: 4vw;
+}
+#modalContainer {
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  #subHeader {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  #subContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 1vw;
+  }
+  
+  .sub {
+    flex: 1;
+    padding: 20px;
+    background-color: purple;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+  
+  .sub:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(128, 0, 128, 0.5);
+  }
+  
+  #title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  #details {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  p:last-child {
+    color: purple;
+    font-weight: bold;
+  }
+  
+  #cancelSub{
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  #cancelSub:hover {
+    background-color: #6a0dad;
+  }
+  body {
+    background: linear-gradient(to bottom,#57b3bd, #2c3538); /* Replace these colors with your desired gradient colors */
+    /* Other styles for the body */
+  }
+#creditImage{
+    width: 21vw;
+    height: 28vh;
+    position:relative;
+    margin: auto;
+
+}

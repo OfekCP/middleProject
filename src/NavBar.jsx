@@ -7,9 +7,10 @@ export default function Navbar() {
     <div className="navBarContainer">
       <nav className="navBar">
         <h1 id="header">
-         stidy
+          Stidy
         </h1>
         <ul className="navul">
+      
         <li id="link">
         <Link to="/Task">Assignment Management</Link>
           </li>
@@ -17,7 +18,10 @@ export default function Navbar() {
             <Link to="/calendar">Calendar</Link>
           </li>
           <li id="link">
-            <Link to="/loginpage">logout</Link>
+            <Link to="/profile">Profile</Link>
+          </li>
+          <li id="link">
+            <Link to="/loginpage">Logout</Link>
           </li>
         </ul>
       </nav>

@@ -5,7 +5,7 @@ import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
 import { createEventId } from './event-utils';
 import Modal from 'react-modal';
-import './calendar.css';
+import './Calendar.css';
 
 
 Modal.setAppElement('#root');
